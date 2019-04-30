@@ -152,8 +152,3 @@ task copyDownloadableDepsToLibs(type: Copy) {
     from configurations.compile
     into 'libs'
 }
-
-project.ext.react = [
-        entryFile: "index.js",
-        jsBundleDirRelease: "$buildDir/intermediates/merged_assets/release/mergeReleaseAssets/out"
-]
